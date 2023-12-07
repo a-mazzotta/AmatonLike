@@ -1,0 +1,143 @@
+\hypertarget{specifiche_8c}{}\doxysection{Riferimenti per il file src/\+Lib/specifiche.c}
+\label{specifiche_8c}\index{src/Lib/specifiche.c@{src/Lib/specifiche.c}}
+{\ttfamily \#include \char`\"{}constants.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}struct.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}input.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}menu\+\_\+design.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}specifiche.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}login.\+h\char`\"{}}\newline
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{specifiche_8c_a3cb388b2b518ad4a76a4d56442dba157}{ricerca\+\_\+per\+\_\+categoria}} ()
+\item 
+int \mbox{\hyperlink{specifiche_8c_a5a6856c5fa54a91d0b1ec948a2a15496}{ricerca\+\_\+per\+\_\+nome}} ()
+\item 
+void \mbox{\hyperlink{specifiche_8c_ab381ca70fa71687eca2358b792fa687b}{ordinamento\+\_\+insert\+\_\+sort}} (\mbox{\hyperlink{structprodotto__t}{prodotto\+\_\+t}} $\ast$array, int dim, int scelta)
+\item 
+void \mbox{\hyperlink{specifiche_8c_af1dd2a9e761f76cee625286d61ed53dc}{acquisto}} (char $\ast$user)
+\item 
+void \mbox{\hyperlink{specifiche_8c_a6e1e7049911ea5e7b44bd5f381edc2fa}{cancellazione\+\_\+acquisti}} (char $\ast$user)
+\item 
+void \mbox{\hyperlink{specifiche_8c_ace2d7c02a1de54b6545661e9e1be52f0}{visualizza\+\_\+acquisti}} (char $\ast$user)
+\item 
+void \mbox{\hyperlink{specifiche_8c_a497d5affab50a29f815006f2c5dec304}{vendi\+\_\+prodotto}} (char $\ast$user)
+\item 
+void \mbox{\hyperlink{specifiche_8c_a1081bb55c5072eb86116317eb170ce4b}{visualizza\+\_\+prodotti\+\_\+esercente}} (char $\ast$user)
+\item 
+void \mbox{\hyperlink{specifiche_8c_a3f8b71165e6ed1d66a6a25f6b7dd4dbb}{visualizza\+\_\+spedizione}} ()
+\item 
+void \mbox{\hyperlink{specifiche_8c_a905e58f7f7535d7f879e5a0ed91b851e}{modifica\+\_\+stato\+\_\+spedizione}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Created on\+: 16 giu 2021
+
+Libreria che contiene tutte le funzioni e procedure che riguardano le azioni che gli utenti possono fare nel programma. \begin{DoxyAuthor}{Autore}
+\+: Alessandro, Alessia 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{specifiche_8c_af1dd2a9e761f76cee625286d61ed53dc}\label{specifiche_8c_af1dd2a9e761f76cee625286d61ed53dc}} 
+\index{specifiche.c@{specifiche.c}!acquisto@{acquisto}}
+\index{acquisto@{acquisto}!specifiche.c@{specifiche.c}}
+\doxysubsubsection{\texorpdfstring{acquisto()}{acquisto()}}
+{\footnotesize\ttfamily void acquisto (\begin{DoxyParamCaption}\item[{char $\ast$}]{user }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parametri}
+{\em user} & dell\textquotesingle{}utente che ha effettuato l\textquotesingle{}accesso \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{specifiche_8c_a6e1e7049911ea5e7b44bd5f381edc2fa}\label{specifiche_8c_a6e1e7049911ea5e7b44bd5f381edc2fa}} 
+\index{specifiche.c@{specifiche.c}!cancellazione\_acquisti@{cancellazione\_acquisti}}
+\index{cancellazione\_acquisti@{cancellazione\_acquisti}!specifiche.c@{specifiche.c}}
+\doxysubsubsection{\texorpdfstring{cancellazione\_acquisti()}{cancellazione\_acquisti()}}
+{\footnotesize\ttfamily void cancellazione\+\_\+acquisti (\begin{DoxyParamCaption}\item[{char $\ast$}]{user }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parametri}
+{\em user} & dell\textquotesingle{}utente che ha effettuato l\textquotesingle{}accesso \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{specifiche_8c_a905e58f7f7535d7f879e5a0ed91b851e}\label{specifiche_8c_a905e58f7f7535d7f879e5a0ed91b851e}} 
+\index{specifiche.c@{specifiche.c}!modifica\_stato\_spedizione@{modifica\_stato\_spedizione}}
+\index{modifica\_stato\_spedizione@{modifica\_stato\_spedizione}!specifiche.c@{specifiche.c}}
+\doxysubsubsection{\texorpdfstring{modifica\_stato\_spedizione()}{modifica\_stato\_spedizione()}}
+{\footnotesize\ttfamily void modifica\+\_\+stato\+\_\+spedizione (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Procedura che permette al corriere di modificare lo stato di spedizione di un prodotto. La modifica avviene da \char`\"{}in attesa\char`\"{} a \char`\"{}spedito\char`\"{}, da \char`\"{}spedito\char`\"{} a \char`\"{}consegnato\char`\"{}. \mbox{\Hypertarget{specifiche_8c_ab381ca70fa71687eca2358b792fa687b}\label{specifiche_8c_ab381ca70fa71687eca2358b792fa687b}} 
+\index{specifiche.c@{specifiche.c}!ordinamento\_insert\_sort@{ordinamento\_insert\_sort}}
+\index{ordinamento\_insert\_sort@{ordinamento\_insert\_sort}!specifiche.c@{specifiche.c}}
+\doxysubsubsection{\texorpdfstring{ordinamento\_insert\_sort()}{ordinamento\_insert\_sort()}}
+{\footnotesize\ttfamily void ordinamento\+\_\+insert\+\_\+sort (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structprodotto__t}{prodotto\+\_\+t}} $\ast$}]{array,  }\item[{int}]{dim,  }\item[{int}]{scelta }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parametri}
+{\em array} & dei prodotti da ordinare \\
+\hline
+{\em dim} & (dimensione) dell\textquotesingle{}array \\
+\hline
+{\em scelta} & del filtro, se si vuole ordinare per costo crescente, costo decrescente o non si vuole ordinare \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{specifiche_8c_a3cb388b2b518ad4a76a4d56442dba157}\label{specifiche_8c_a3cb388b2b518ad4a76a4d56442dba157}} 
+\index{specifiche.c@{specifiche.c}!ricerca\_per\_categoria@{ricerca\_per\_categoria}}
+\index{ricerca\_per\_categoria@{ricerca\_per\_categoria}!specifiche.c@{specifiche.c}}
+\doxysubsubsection{\texorpdfstring{ricerca\_per\_categoria()}{ricerca\_per\_categoria()}}
+{\footnotesize\ttfamily int ricerca\+\_\+per\+\_\+categoria (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funzione che si occupa della ricerca dei prodotti in base alla categoria scelta dall\textquotesingle{}utente. Il risultato della ricerca viene passato ad un array che successivamente viene ordinato (se l\textquotesingle{}utente sceglie un filtro per l\textquotesingle{}ordinamento del risultato). \begin{DoxyReturn}{Restituisce}
+1 se la ricerca non ha trovato prodotti nel file catalogo, oppure 0 se ha trovato dei prodotti 
+\end{DoxyReturn}
+\mbox{\Hypertarget{specifiche_8c_a5a6856c5fa54a91d0b1ec948a2a15496}\label{specifiche_8c_a5a6856c5fa54a91d0b1ec948a2a15496}} 
+\index{specifiche.c@{specifiche.c}!ricerca\_per\_nome@{ricerca\_per\_nome}}
+\index{ricerca\_per\_nome@{ricerca\_per\_nome}!specifiche.c@{specifiche.c}}
+\doxysubsubsection{\texorpdfstring{ricerca\_per\_nome()}{ricerca\_per\_nome()}}
+{\footnotesize\ttfamily int ricerca\+\_\+per\+\_\+nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funzione che si occupa della ricerca dei prodotti in base al nome del prodotto (la ricerca puo\textquotesingle{} avvenire anche con sottostringa). Il risultato della ricerca viene passato ad un array che successivamente viene ordinato (se l\textquotesingle{}utente sceglie un filtro per l\textquotesingle{}ordinamento del risultato). \begin{DoxyReturn}{Restituisce}
+1 se la ricerca non ha prodotto risultato, oppure 0 se la ricerca e\textquotesingle{} andata a buon fine. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{specifiche_8c_a497d5affab50a29f815006f2c5dec304}\label{specifiche_8c_a497d5affab50a29f815006f2c5dec304}} 
+\index{specifiche.c@{specifiche.c}!vendi\_prodotto@{vendi\_prodotto}}
+\index{vendi\_prodotto@{vendi\_prodotto}!specifiche.c@{specifiche.c}}
+\doxysubsubsection{\texorpdfstring{vendi\_prodotto()}{vendi\_prodotto()}}
+{\footnotesize\ttfamily void vendi\+\_\+prodotto (\begin{DoxyParamCaption}\item[{char $\ast$}]{user }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parametri}
+{\em user} & dell\textquotesingle{}utente che ha effettuato l\textquotesingle{}accesso \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{specifiche_8c_ace2d7c02a1de54b6545661e9e1be52f0}\label{specifiche_8c_ace2d7c02a1de54b6545661e9e1be52f0}} 
+\index{specifiche.c@{specifiche.c}!visualizza\_acquisti@{visualizza\_acquisti}}
+\index{visualizza\_acquisti@{visualizza\_acquisti}!specifiche.c@{specifiche.c}}
+\doxysubsubsection{\texorpdfstring{visualizza\_acquisti()}{visualizza\_acquisti()}}
+{\footnotesize\ttfamily void visualizza\+\_\+acquisti (\begin{DoxyParamCaption}\item[{char $\ast$}]{user }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parametri}
+{\em user} & dell\textquotesingle{}utente che ha effettuato l\textquotesingle{}accesso \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{specifiche_8c_a1081bb55c5072eb86116317eb170ce4b}\label{specifiche_8c_a1081bb55c5072eb86116317eb170ce4b}} 
+\index{specifiche.c@{specifiche.c}!visualizza\_prodotti\_esercente@{visualizza\_prodotti\_esercente}}
+\index{visualizza\_prodotti\_esercente@{visualizza\_prodotti\_esercente}!specifiche.c@{specifiche.c}}
+\doxysubsubsection{\texorpdfstring{visualizza\_prodotti\_esercente()}{visualizza\_prodotti\_esercente()}}
+{\footnotesize\ttfamily void visualizza\+\_\+prodotti\+\_\+esercente (\begin{DoxyParamCaption}\item[{char $\ast$}]{user }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parametri}
+{\em user} & che ha effettuato l\textquotesingle{}accesso \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{specifiche_8c_a3f8b71165e6ed1d66a6a25f6b7dd4dbb}\label{specifiche_8c_a3f8b71165e6ed1d66a6a25f6b7dd4dbb}} 
+\index{specifiche.c@{specifiche.c}!visualizza\_spedizione@{visualizza\_spedizione}}
+\index{visualizza\_spedizione@{visualizza\_spedizione}!specifiche.c@{specifiche.c}}
+\doxysubsubsection{\texorpdfstring{visualizza\_spedizione()}{visualizza\_spedizione()}}
+{\footnotesize\ttfamily void visualizza\+\_\+spedizione (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Procedura che permette al corriere di visualizzare tutti gli stati di spedizione dei prodotti acquistati e di prenderne il carico. Non puo\textquotesingle{} visualizzare i prodotti gia\textquotesingle{} consegnati. 

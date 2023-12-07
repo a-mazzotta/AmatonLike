@@ -1,0 +1,125 @@
+\hypertarget{input_8h}{}\doxysection{Riferimenti per il file src/\+Lib/input.h}
+\label{input_8h}\index{src/Lib/input.h@{src/Lib/input.h}}
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{input_8h_a3525598719638ffd3709dc4eb2be297c}{input\+\_\+int}} ()
+\item 
+float \mbox{\hyperlink{input_8h_ac166cf1a7501449a615a8b50d9584951}{input\+\_\+float}} ()
+\item 
+char $\ast$ \mbox{\hyperlink{input_8h_a2526ece77109820fc5204d24b3d94457}{input\+\_\+str}} ()
+\item 
+char $\ast$ \mbox{\hyperlink{input_8h_a81cd10d2033469a9eaeb94637025aa4a}{input\+\_\+tel}} ()
+\item 
+char $\ast$ \mbox{\hyperlink{input_8h_a06f6c49f2eb303081e4f759d8fdf8b7e}{input\+\_\+pass}} ()
+\item 
+int \mbox{\hyperlink{input_8h_ad283f74856de7c7c169c2d6e59a2c5a7}{controllo\+\_\+num\+\_\+string}} (char $\ast$stringa)
+\item 
+int \mbox{\hyperlink{input_8h_ae84d8a893391639c8478b0aa7c8fc5f3}{controllo\+\_\+username}} (char $\ast$input)
+\item 
+int \mbox{\hyperlink{input_8h_ac62d487085b71a88dbf1c72ddb891531}{incrementa\+\_\+id\+\_\+prodotto}} ()
+\item 
+int \mbox{\hyperlink{input_8h_a6935c2a288d461abb957b45b3fb34748}{incrementa\+\_\+id\+\_\+ordine}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Created on\+: 9 giu 2021
+
+Libreria che si occupa degli iserimenti in input e dei controlli degli inserimenti e l\textquotesingle{}incremento degli id per quanto riguarda i prodotti \begin{DoxyAuthor}{Autori}
+\+: Alessandro, Alessia 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{input_8h_ad283f74856de7c7c169c2d6e59a2c5a7}\label{input_8h_ad283f74856de7c7c169c2d6e59a2c5a7}} 
+\index{input.h@{input.h}!controllo\_num\_string@{controllo\_num\_string}}
+\index{controllo\_num\_string@{controllo\_num\_string}!input.h@{input.h}}
+\doxysubsubsection{\texorpdfstring{controllo\_num\_string()}{controllo\_num\_string()}}
+{\footnotesize\ttfamily int controllo\+\_\+num\+\_\+string (\begin{DoxyParamCaption}\item[{char $\ast$}]{stringa }\end{DoxyParamCaption})}
+
+Funzione che controlla se la stringa presa come parametro contiene numeri. 
+\begin{DoxyParams}{Parametri}
+{\em stringa} & da controllare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1 nel caso ci sono numeri o 0 se non ci sono. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{input_8h_ae84d8a893391639c8478b0aa7c8fc5f3}\label{input_8h_ae84d8a893391639c8478b0aa7c8fc5f3}} 
+\index{input.h@{input.h}!controllo\_username@{controllo\_username}}
+\index{controllo\_username@{controllo\_username}!input.h@{input.h}}
+\doxysubsubsection{\texorpdfstring{controllo\_username()}{controllo\_username()}}
+{\footnotesize\ttfamily int controllo\+\_\+username (\begin{DoxyParamCaption}\item[{char $\ast$}]{input }\end{DoxyParamCaption})}
+
+Funzione che legge nei file utente, se trova l\textquotesingle{}username preso come parametro, all\textquotesingle{}interno di un file, allora l\textquotesingle{}username e\textquotesingle{} gia\textquotesingle{} esistente. 
+\begin{DoxyParams}{Parametri}
+{\em input} & inserito dall\textquotesingle{}utente. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+0 se l\textquotesingle{}username non esista gia\textquotesingle{}, 1 se l\textquotesingle{}username esiste gia\textquotesingle{}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{input_8h_a6935c2a288d461abb957b45b3fb34748}\label{input_8h_a6935c2a288d461abb957b45b3fb34748}} 
+\index{input.h@{input.h}!incrementa\_id\_ordine@{incrementa\_id\_ordine}}
+\index{incrementa\_id\_ordine@{incrementa\_id\_ordine}!input.h@{input.h}}
+\doxysubsubsection{\texorpdfstring{incrementa\_id\_ordine()}{incrementa\_id\_ordine()}}
+{\footnotesize\ttfamily int incrementa\+\_\+id\+\_\+ordine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funzione che legge nel file acquisti l\textquotesingle{}ultimo prodotto controllandone l\textquotesingle{}id ordine ed incrementandolo di uno \begin{DoxyReturn}{Restituisce}
+l\textquotesingle{}id incrementato. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{input_8h_ac62d487085b71a88dbf1c72ddb891531}\label{input_8h_ac62d487085b71a88dbf1c72ddb891531}} 
+\index{input.h@{input.h}!incrementa\_id\_prodotto@{incrementa\_id\_prodotto}}
+\index{incrementa\_id\_prodotto@{incrementa\_id\_prodotto}!input.h@{input.h}}
+\doxysubsubsection{\texorpdfstring{incrementa\_id\_prodotto()}{incrementa\_id\_prodotto()}}
+{\footnotesize\ttfamily int incrementa\+\_\+id\+\_\+prodotto (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funzione che legge nel file catalogo l\textquotesingle{}ultimo prodotto controllandone l\textquotesingle{}id prodotto ed incrementandolo di uno. \begin{DoxyReturn}{Restituisce}
+l\textquotesingle{}id incrementato. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{input_8h_ac166cf1a7501449a615a8b50d9584951}\label{input_8h_ac166cf1a7501449a615a8b50d9584951}} 
+\index{input.h@{input.h}!input\_float@{input\_float}}
+\index{input\_float@{input\_float}!input.h@{input.h}}
+\doxysubsubsection{\texorpdfstring{input\_float()}{input\_float()}}
+{\footnotesize\ttfamily float input\+\_\+float (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funzione che si occupa dell\textquotesingle{}inserimento di float con programmazione difensiva nel caso non viene inserito un float. \begin{DoxyReturn}{Restituisce}
+il numero decimale inserito. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{input_8h_a3525598719638ffd3709dc4eb2be297c}\label{input_8h_a3525598719638ffd3709dc4eb2be297c}} 
+\index{input.h@{input.h}!input\_int@{input\_int}}
+\index{input\_int@{input\_int}!input.h@{input.h}}
+\doxysubsubsection{\texorpdfstring{input\_int()}{input\_int()}}
+{\footnotesize\ttfamily int input\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funzione che si occupa dell\textquotesingle{}inserimento di interi con programmazione difensiva nel caso non viene inserito un intero. \begin{DoxyReturn}{Restituisce}
+l\textquotesingle{}intero inserito. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{input_8h_a06f6c49f2eb303081e4f759d8fdf8b7e}\label{input_8h_a06f6c49f2eb303081e4f759d8fdf8b7e}} 
+\index{input.h@{input.h}!input\_pass@{input\_pass}}
+\index{input\_pass@{input\_pass}!input.h@{input.h}}
+\doxysubsubsection{\texorpdfstring{input\_pass()}{input\_pass()}}
+{\footnotesize\ttfamily char$\ast$ input\+\_\+pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funzione che si occupa dell\textquotesingle{}inserimento della password con programmazione difensiva nel caso la password e\textquotesingle{} piu\textquotesingle{} lunga di 5 caratteri e non contiene una maiuscola ed un numero. \begin{DoxyReturn}{Restituisce}
+la password 
+\end{DoxyReturn}
+\mbox{\Hypertarget{input_8h_a2526ece77109820fc5204d24b3d94457}\label{input_8h_a2526ece77109820fc5204d24b3d94457}} 
+\index{input.h@{input.h}!input\_str@{input\_str}}
+\index{input\_str@{input\_str}!input.h@{input.h}}
+\doxysubsubsection{\texorpdfstring{input\_str()}{input\_str()}}
+{\footnotesize\ttfamily char$\ast$ input\+\_\+str (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funzione che si occupa dell\textquotesingle{}inserimento di stringhe con programmazione difensiva nel caso non viene inserita una stringa o la stringa inserita e\textquotesingle{} vuota. \begin{DoxyReturn}{Restituisce}
+la stringa inserita. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{input_8h_a81cd10d2033469a9eaeb94637025aa4a}\label{input_8h_a81cd10d2033469a9eaeb94637025aa4a}} 
+\index{input.h@{input.h}!input\_tel@{input\_tel}}
+\index{input\_tel@{input\_tel}!input.h@{input.h}}
+\doxysubsubsection{\texorpdfstring{input\_tel()}{input\_tel()}}
+{\footnotesize\ttfamily char$\ast$ input\+\_\+tel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funzione che si occupa dell\textquotesingle{}inserimento del numero di telefono con programmazione difensiva nel caso il numero inserito non e\textquotesingle{} lungo 10 numeri o nel caso non ci sono numeri. \begin{DoxyReturn}{Restituisce}
+il numero di telefono. 
+\end{DoxyReturn}

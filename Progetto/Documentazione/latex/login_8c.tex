@@ -1,0 +1,86 @@
+\hypertarget{login_8c}{}\doxysection{Riferimenti per il file src/\+Lib/login.c}
+\label{login_8c}\index{src/Lib/login.c@{src/Lib/login.c}}
+{\ttfamily \#include \char`\"{}librerie.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}struct.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}menu\+\_\+design.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}input.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}login.\+h\char`\"{}}\newline
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{login_8c_aebe83dca7878319b2f464b12c21e5207}{login}} ()
+\item 
+char $\ast$ \mbox{\hyperlink{login_8c_a2c9e1ac6d9758c1b0ee307e89ea4a505}{accesso}} ()
+\item 
+void \mbox{\hyperlink{login_8c_aa335bc1f2d34d3b52565430a8f95dde1}{registrazione}} ()
+\item 
+int \mbox{\hyperlink{login_8c_adaa1c10c4833f7c3b3d437c083f005df}{tipo\+\_\+account}} (char $\ast$user)
+\item 
+int \mbox{\hyperlink{login_8c_aaf39f6e6ddc6e213534caf904dadb759}{apri\+\_\+files}} ()
+\item 
+void \mbox{\hyperlink{login_8c_a3c7b0314ee2a829122de54ded9f313b3}{chiudi\+\_\+files}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Created on\+: 9 giu 2021
+
+Libreria che contiene le funzioni e procedure utili all\textquotesingle{} inizio del programma e alla fase di login \begin{DoxyAuthor}{Autori}
+\+: Alessandro, Alessia 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{login_8c_a2c9e1ac6d9758c1b0ee307e89ea4a505}\label{login_8c_a2c9e1ac6d9758c1b0ee307e89ea4a505}} 
+\index{login.c@{login.c}!accesso@{accesso}}
+\index{accesso@{accesso}!login.c@{login.c}}
+\doxysubsubsection{\texorpdfstring{accesso()}{accesso()}}
+{\footnotesize\ttfamily char$\ast$ accesso (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funzione che si occupa dell\textquotesingle{}accesso al programma, chiedendo in input all\textquotesingle{}utente username e password che verranno confrontati con quelli registrati. \begin{DoxyReturn}{Restituisce}
+l\textquotesingle{}username dell\textquotesingle{}utente che ha effettuato l\textquotesingle{}accesso. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{login_8c_aaf39f6e6ddc6e213534caf904dadb759}\label{login_8c_aaf39f6e6ddc6e213534caf904dadb759}} 
+\index{login.c@{login.c}!apri\_files@{apri\_files}}
+\index{apri\_files@{apri\_files}!login.c@{login.c}}
+\doxysubsubsection{\texorpdfstring{apri\_files()}{apri\_files()}}
+{\footnotesize\ttfamily int apri\+\_\+files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funzione che apre tutti i file \begin{DoxyReturn}{Restituisce}
+1 se ha successo l\textquotesingle{}apertura, 0 altrimenti 
+\end{DoxyReturn}
+\mbox{\Hypertarget{login_8c_a3c7b0314ee2a829122de54ded9f313b3}\label{login_8c_a3c7b0314ee2a829122de54ded9f313b3}} 
+\index{login.c@{login.c}!chiudi\_files@{chiudi\_files}}
+\index{chiudi\_files@{chiudi\_files}!login.c@{login.c}}
+\doxysubsubsection{\texorpdfstring{chiudi\_files()}{chiudi\_files()}}
+{\footnotesize\ttfamily void chiudi\+\_\+files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Procedura che chiude tutti i file \mbox{\Hypertarget{login_8c_aebe83dca7878319b2f464b12c21e5207}\label{login_8c_aebe83dca7878319b2f464b12c21e5207}} 
+\index{login.c@{login.c}!login@{login}}
+\index{login@{login}!login.c@{login.c}}
+\doxysubsubsection{\texorpdfstring{login()}{login()}}
+{\footnotesize\ttfamily char$\ast$ login (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funzione che si occupa della fase di login e permette all\textquotesingle{}utente di scegliere se accedere o registra. Nel caso l\textquotesingle{}utente scelga di accedere, il programma memorizzera\textquotesingle{} l\textquotesingle{}username con cui si e\textquotesingle{} effettuato l\textquotesingle{}accesso. Nel caso l\textquotesingle{}utente scelga di registrarsi, il programma acquisira\textquotesingle{} le informazioni utili alla registrazione e tornera\textquotesingle{} alla fase login. \begin{DoxyReturn}{Restituisce}
+l\textquotesingle{}username dell\textquotesingle{}utente che ha effettuato l\textquotesingle{}accesso. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{login_8c_aa335bc1f2d34d3b52565430a8f95dde1}\label{login_8c_aa335bc1f2d34d3b52565430a8f95dde1}} 
+\index{login.c@{login.c}!registrazione@{registrazione}}
+\index{registrazione@{registrazione}!login.c@{login.c}}
+\doxysubsubsection{\texorpdfstring{registrazione()}{registrazione()}}
+{\footnotesize\ttfamily void registrazione (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Procedura che acquisisce i dati utili per la registrazione di un nuovo account nel programma. L\textquotesingle{}utente dovra\textquotesingle{} prima scegliere che tipo di account registrare ed in base al tipo scelto, verranno chiesti determinati dati. \mbox{\Hypertarget{login_8c_adaa1c10c4833f7c3b3d437c083f005df}\label{login_8c_adaa1c10c4833f7c3b3d437c083f005df}} 
+\index{login.c@{login.c}!tipo\_account@{tipo\_account}}
+\index{tipo\_account@{tipo\_account}!login.c@{login.c}}
+\doxysubsubsection{\texorpdfstring{tipo\_account()}{tipo\_account()}}
+{\footnotesize\ttfamily int tipo\+\_\+account (\begin{DoxyParamCaption}\item[{char $\ast$}]{user }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parametri}
+{\em user} & dell\textquotesingle{}utente che ha effettuato l\textquotesingle{}accesso. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1 se trova l\textquotesingle{}username nel file acquirenti, 2 se trova l\textquotesingle{}username nel file esercenti, 3 se trova l\textquotesingle{}username nel file corrieri. 
+\end{DoxyReturn}
